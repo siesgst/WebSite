@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "frame.html" %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block content %}
+    <div class="row" style="height:70%">
+        <div class="col-2">
+            {% block department_links %}
+                department links goes here
+            {% endblock %}            
+        </div>
+        
+        <div class="col-9">
+            {% block department_data %}
+                department data goes here
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

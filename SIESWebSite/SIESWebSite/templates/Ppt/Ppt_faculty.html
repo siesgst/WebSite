@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% extends "Ppt/Ppt_department.html" %}
+{% load staticfiles %}
+{% block title %}My Hello Page{% endblock %}
+
+
+{% block data %}
+<table style="width:100%">
+  <tr>
+    <th>PHOTO</th>
+    <th>NAME</th> 
+    <th>POSITION</th>
+    <th>QUALIFICATION</th>
+  </tr>
+  <tr>
+    <td><img src='{% static "images/Ppt/prasad_iyer.jpg" %}' width="50" height="50"></td>
+    <td>Prof. Prasad Iyer</td> 
+    <td>HOD</td>
+    <td>B.E(Chem.Engg.), M.E. (Plastic Engg.). Ph.D*</td>
+  </tr>
+<tr>
+    <td><img src='{% static "images/Ppt/katyayini_tembadmani.jpg" %}' width="50" height="50"></td>
+    <td>Prof.Katyayini Tembadmani</td> 
+    <td>Assistant Professor</td>
+    <td>B.E(Chem.Engg.), M.Tech(B.T), Ph.D*</td>
+  </tr>
+  <tr>
+    <td><img src='{% static "images/Ppt/shubhangi_kadu.jpg" %}' width="50" height="50"></td>
+    <td>Prof.Shubhangi Kadu</td> 
+    <td>Assistant Professor</td>
+    <td>B.E.(Chem), M.E.(Chemical), Ph.D*</td>
+  </tr>
+    <tr>
+    <td><img src="" width="50" height="50"></td>
+    <td>Prof.Gaurav Fasate</td> 
+    <td>Lecturer</td>
+    <td>B.E(Printing Engg. & Comm. Tech.), M.E*</td>
+  </tr>
+    <tr>
+    <td><img src=" " width="50" height="50"></td>
+    <td>Prof.Sagar Waghmare</td> 
+    <td>Assistant  Professor</td>
+    <td>B.Tech (Plastic & Polymer), M.E (Plastics)</td>
+  </tr>
+    <tr>
+    <td><img src='{% static "images/Ppt/sandesh_ramteke.jpg" %}' width="50" height="50"></td>
+    <td>Dr. Sandesh Ramteke</td> 
+    <td>Assistant  Professor</td>
+    <td>B.Tech (Chem.Engg.), M.E (Plastic Engg.), Ph.D (Plastic Engg)</td>
+  </tr>
+   </table>
+{% endblock %}
