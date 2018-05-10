@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
@@ -91,3 +92,27 @@ def HAS_faculty(request):
 
 def HAS_achievement(request):
     return render(request, 'HAS/HAS_achievement.html')
+
+
+############# Admission ##############
+#######################################
+
+def Admission( request):
+    return render(request, 'Admission/Admission.html')
+def Brochure( request):
+    from django.conf import settings
+    #base_url = 'file://' + settings.STATIC_ROOT
+    base_url = settings.STATIC_ROOT
+    filename = 'Brochure.pdf'
+    path = base_url + '\\Admission\\' + filename
+    data = open(path, 'rb').read()
+    return HttpResponse(data, content_type='application/pdf')
+
+def Feestructure( request):    
+    from django.conf import settings
+    #base_url = 'file://' + settings.STATIC_ROOT
+    base_url = settings.STATIC_ROOT
+    filename = 'Feestructure.pdf'
+    path = base_url + '\\Admission\\' + filename
+    data = open(path, 'rb').read()
+    return HttpResponse(data, content_type='application/pdf')

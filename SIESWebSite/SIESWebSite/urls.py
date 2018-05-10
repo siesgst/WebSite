@@ -50,4 +50,8 @@ urlpatterns = [
     path('HAS_dept_activity/', views.HAS_department_activities, name='HAS_department_activities'),
     path('HAS_fac/', views.HAS_faculty, name='HAS_faculty'),
     path('HAS_achievement/', views.HAS_achievement, name='HAS_achievement'),
+    
+    path('Admission/', views.Admission, name='Admission'),
+    path('Brochure/', views.Brochure, name='Brochure'),
+    path('Feestructure/', views.Feestructure, name='Feestructure'), 
     ]

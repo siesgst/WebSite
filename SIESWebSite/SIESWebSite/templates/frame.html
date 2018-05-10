@@ -33,7 +33,26 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">    
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href = '{% url 'home' %}'>Home </a> </li>
-                <li class="nav-item"><a class="nav-link" href = ''>About us </a> </li>          
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About us</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href=''>Overview</a>                    
+                        <a class="dropdown-item" href=''>Managing Committee</a>
+                        <a class="dropdown-item" href=''>The Principal</a>
+                        <a class="dropdown-item" href=''>Core Values</a>
+                        <a class="dropdown-item" href=''>Organisations & Governance</a>
+                        <a class="dropdown-item" href=''>Internal Complaint Committee</a>
+                        <a class="dropdown-item" href="">Women Development Cell</a>
+                        <a class="dropdown-item" href="">Internal Quality Assurance Committee</a>
+                        <a class="dropdown-item" href="">Anti Ragging Committee</a>
+                        <a class="dropdown-item" href="">Mandatory Disclosure</a>
+                    </div>
+                </li>
+                
+                
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Departments</a>
                     <div class="dropdown-menu">
@@ -47,12 +66,45 @@
                         <a class="dropdown-item" href="">Exam Cell</a>
                     </div>
                 </li>            
-                <li class="nav-item"><a class="nav-link" href = ''>Amenities </a> </li>
-                <li class="nav-item"><a class="nav-link" href = ''>Admission </a> </li>
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Amenities</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href=''>Library</a>                    
+                        <a class="dropdown-item" href=''>Divyangjan Facilities</a>
+                        <a class="dropdown-item" href=''>Eyantra</a>
+                        <a class="dropdown-item" href=''>IIT Bombay</a>
+                        <a class="dropdown-item" href=''>Computer Center</a>
+                        <a class="dropdown-item" href=''>Intranet</a>
+                        <a class="dropdown-item" href="">General Laboratories</a>
+                        <a class="dropdown-item" href="">Auditorium & Hall</a>
+                        <a class="dropdown-item" href="">Akash Project Labs</a>
+                        <a class="dropdown-item" href="">Miscellaneous</a>
+                    </div>
+                </li>
+                
+                
+                <li class="nav-item"><a class="nav-link" href = '{% url 'Admission' %}'>Admission </a> </li>
                 <li class="nav-item"><a class="nav-link" href = ''>Placement </a> </li>
                 <li class="nav-item"><a class="nav-link" href = ''>Specialized Laboratories </a> </li> 
                 <li class="nav-item"><a class="nav-link" href = ''>Research </a> </li>
-                <li class="nav-item"><a class="nav-link" href = ''>Campus Life </a> </li>
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Campus Life</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href=''>Student Chapters</a>                    
+                        <a class="dropdown-item" href=''>NSS</a>
+                        <a class="dropdown-item" href=''>Dream Run</a>
+                        <a class="dropdown-item" href=''>Clubs</a>
+                        <a class="dropdown-item" href=''>Festivals</a>
+                        <a class="dropdown-item" href=''>Student Council</a>
+                        <a class="dropdown-item" href="">Capability Enhancement</a>
+                    </div>
+                </li>
+                
+                
                 <li class="nav-item"><a class="nav-link" href = ''>NEWS </a> </li>
                 <li class="nav-item"><a class="nav-link" href = ''>NIRF </a> </li>
                 <li class="nav-item"><a class="nav-link" href = ''>NAAC </a> </li>
