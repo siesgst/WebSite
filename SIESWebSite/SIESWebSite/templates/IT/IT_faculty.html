@@ -1,0 +1,89 @@
+{% extends "IT/IT_department.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+{% block title %}My Hello Page{% endblock %}
+
+
+{% block data %}
+<table style="width:100%">
+    <tr>
+        <th>PHOTO</th>
+        <th>NAME</th> 
+        <th>POSITION</th>
+        <th>QUALIFICATION</th>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Lakshmi_Sudha.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Lakshmi Sudha</td> 
+        <td>HOD</td>
+        <td>B.E(ECE), M.E(App.Electronics), Ph.D*</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Leena_Ladge.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Leena Ladge</td> 
+        <td>Assistant Professor</td>
+        <td>B.E(ECE), M.Tech(VLSI Design & Embedded Systems), Ph.D*</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Vijay_Katkar.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Dr.Vijay D Katkar</td> 
+        <td>Associate Professor</td>
+        <td>B.E (IT), M.Tech (CE), Ph.D (CE)</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Mrinal_Khadse.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Mrinal Khadse</td> 
+        <td>Assistant Professor</td>
+        <td>B.E(CSE), M.E (CE)</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Savita_Lohiya.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Savita Lohiya</td> 
+        <td>Assistant Professor</td>
+        <td>B.E(CSE), M.E (CE)</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Seema_Redekar.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Seema Redekar</td> 
+        <td>Assistant Professor</td>
+        <td>B.E, M.E (CE)</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Saritha_LR.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Saritha L.R</td> 
+        <td>Assistant Professor</td>
+        <td>B.Tech(EEE), M.S(Electrical & Computer Engg.)</td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Varsha_Mali.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Varsha Mali  </td> 
+        <td>Assistant Professor</td>
+        <td>B.E(IT), M.E (CE) </td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Bushra_Shaikh.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Bushra Shaikh    </td> 
+        <td>Assistant Professor</td>
+        <td>B.E, M.E (IT)   </td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Stuti_Ahuja.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Stuti Ahuja  </td> 
+        <td>Assistant Professor</td>
+        <td>B.E (CSE), M.E (CE) </td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Stephy_Benny.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Stephy Benny </td> 
+        <td>Assistant Professor</td>
+        <td>B.E (IT), M.Tech (CSE)  </td>
+    </tr>
+    <tr>
+        <td> <img src='{% static "images/IT/Deepali_Gawali.jpg" %}' alt="hi" width="50" height="50"> </td>
+        <td>Ms.Deepali Gawali   </td> 
+        <td>Assistant Professor</td>
+        <td>B.E, M.Tech (CE)    </td>
+    </tr>
+     
+</table>
+{% endblock %}

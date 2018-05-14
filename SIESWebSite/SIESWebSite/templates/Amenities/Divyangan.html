@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "Amenities/Amenities_department.html" %}
+{% load staticfiles %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block content %}
+<H1 align="center">DIVYANGJAN</h1>
+
+<h4>LIFT</h4><img  src="{% static "images/Amenities/Lift.jpg" %}" style="height:100%; float:left"/> 
+<h4>Ramp Eentry 1</h4><img  src="{% static "images/Amenities/Ramp_entry_1.jpg" %}" style="height:100%; float:left"/> 
+<h4>Ramp Entry 2</h4><img  src="{% static "images/Amenities/Ramp_entry_2.JPG" %}" style="height:100%; float:left"/>
+{% endblock %}

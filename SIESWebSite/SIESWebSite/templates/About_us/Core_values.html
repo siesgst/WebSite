@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "About_us/About.html" %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block data %}
+    <h1> Core Values </h1>   
+    <p> 
+    <a href='{% url 'Core_values_img' %}'><h2> <center>Core values</center></h2></a>
+    </p>
+{% endblock %}

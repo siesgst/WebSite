@@ -1,0 +1,14 @@
+{% extends "About_us/About.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+{% block title %}My Hello Page{% endblock %}
+
+{% block data %}
+
+<img src='{% static "images/About_us/Org.png" %}' alt="hi" width="500" height="500">
+<br>
+<a href='{% url 'Strategic_plan' %}'><h2> <center>Strategic plan </center></h2></a>
+
+
+    
+{% endblock %}

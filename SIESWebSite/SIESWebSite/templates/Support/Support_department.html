@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "department.html" %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block department_links %}
+    <nav class="navbar bg-dark">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href='{% url 'About_support' %}'>About Support Department</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Exam_cell' %}'>Exam Cell</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Admin_office' %}'>Admin Office</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Nonteaching_staff' %}'>Nonteaching Staff</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#">Contact us</a> </li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+{% block department_data %}
+    {% block data %}
+    {% endblock%}
+{% endblock %}

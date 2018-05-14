@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "frame.html" %}
+{% load staticfiles %}
+
+{% block title %}My Hello Page{% endblock %}
+
+{% block content %}
+    <br>
+    <br>
+<a href = '{% url 'Mandatory_disclosure' %}'>Mandatory Disclosure </a>
+<br>
+<a href = '{% url 'Feestructure' %}'>Fee Proposal </a>
+<br>
+<a href = '{% url 'AICTE_approval' %}'>AICTE Approval Letter for the Year 2017-18 </a>    
+{% endblock %}

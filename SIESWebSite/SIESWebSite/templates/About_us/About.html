@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "department.html" %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block department_links %}
+    <nav class="navbar bg-dark">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Overview' %}'>Overview</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Managing_committee' %}'>Managing committee</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'The_principal' %}'>The principal</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Core_values' %}'>Core values</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Organisation_and_governance' %}'>Organisation and governance</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Woman_dev_cell' %}'>Woman development cell</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Internal_complaint_committee' %}'>Internal complaint committee</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Anti_ragging_committee' %}'>Anti ragging committee</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Vision_and_mission' %}'>Vision and mission</a> </li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+{% block department_data %}
+    {% block data %}
+    {% endblock%}
+{% endblock %}

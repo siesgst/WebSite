@@ -1,0 +1,71 @@
+{% extends "Support/Support_department.html" %}
+{% load staticfiles %}
+<!DOCTYPE html>
+
+{% block title %}My Hello Page{% endblock %}
+
+{% block data %}
+    <h1> ADMIN OFFICE </h1>   
+    <img  src="{% static "images/Support/Office.jpg" %}" style="height:100%; float:left"/>
+<br />
+
+    <h3> Accessible </h3>
+        <ul> 
+           <li>Fee collection </li>
+           <li>Railway Concession </li>
+           <li>Bus concession</li>
+           <li>Issue ID cards</li>
+           <li>Grievances</li>
+           <li>EBC &amp; Other Gov scholarship</li>
+        </ul>
+    <h3> Documents </h3>
+        <ul>
+            <li>Bonafide certificate</li>
+            <li>Transfer certificate</li>
+            <li>Migration certificates </li>
+            <li>Custodian certificates</li>
+            <li>Internship letters</li>
+        </ul>
+    <h3> Support Work </h3>
+        <ul>
+            <li>Roll list</li>
+            <li>Repair and maintenance</li>
+            <li>Leave register &amp; other records </li>
+            <li>Faculty deliverables </li>
+            <li>Purchase- Consumable / Stationary  </li>
+        </ul>
+    <h3> General Work </h3>
+        <ul>
+            <li>Approval</li>
+            <li>Admission process</li>
+            <li>Enrolment process</li>
+            <li>Correspondence with approving authorities </li>
+        </ul>
+    <h3> Staff </h3>   
+        <ul class="collection">
+                <li class="collection-item">
+                    Ms. V. Vijayalakshmi -
+                    <span class="fac_position ">Office Superintendent</span><br>
+                </li>
+                <li class="collection-item">
+                    Ms. Chithra Balasubramaniam
+                </li>
+                <li class="collection-item">
+                    Mr. Vilas R Dhupkar
+                </li><li class="collection-item">
+                    Ms. Lakshmi Prabhakaran
+                </li>
+                <li class="collection-item">
+                    Ms. Rupali V Chavan
+                </li>
+                <li class="collection-item">
+                    Mr. Nilesh K Patil
+                </li>
+                <li class="collection-item">
+                    Mr. K . Murgan
+                </li>
+                <li class="collection-item">
+                    Mr. Shamsundar Monde
+                </li>
+            </ul>
+{% endblock %}

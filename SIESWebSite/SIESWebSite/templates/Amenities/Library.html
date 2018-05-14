@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends "Amenities/Amenities_department.html" %}
+{% load staticfiles %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block content %}
+<H1 align="center"> Library @ SIES GRADUATE SCHOOL OF TECHNOLOGY</h1>
+<img src="{% static "images/Amenities/Library.jpg" %}">
+<h4>LIBRARY</h4>
+<p>
+                    The GST library aims to create and preserve an incessant source of knowledge for the students. It is a
+                    gateway to latest information and trends in the world and an information hub for the academic community.
+                    Spacious and comfortable, the library offers a congenial and dynamic environment for conducting academic
+                    work, study and research. It offers a fine collection of books, reference books and technical journals and
+                    magazines, all of which are arranged in a neat and organized, subject-wise manner for easy access and quick
+                    retrieval.
+</p>
+<a href="https://sites.google.com/site/libgst/home">Take Me To Library</a>
+                 <ul>
+                    <li>More than 14500 and around 4000 titles </li>
+                    <li>Automated Bar-Coding System</li>
+                    <li>Dynamic CD Library</li>
+                    <li>Pertinent website information made available to various international journals</li>
+                    <li>Reprographic facilities</li>
+                    <li>Computer-enabled digital library for acesss to various international journals</li>
+                    <li>Computer-document service involving issues &amp; returns</li>
+                    <li>Multimedia facility</li>
+                </ul>
+                
+{% endblock %}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "department.html" %}
+{% block title %}My Hello Page{% endblock %}
+
+
+{% block department_links %}
+    <nav class="navbar bg-dark">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Library' %}'>Library</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Divyangan' %}'>Divyangjan</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Eyantra' %}'>Eyantra</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Iitbombay' %}'>IIT Bombay</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Computer_centre' %}'>Computer Centre</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Intranet' %}'>Intranet</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'General_laboratories' %}'>General Laboratories</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Auditorium_and_halls' %}'>Auditorium and halls</a> </li>
+            <li class="nav-item"> <a class="nav-link" href='{% url 'Aakash_project_labs' %}'>Aakash Project Labs</a> </li>
+        </ul>
+    </nav>
+{% endblock %}
+
+
+{% block department_data %}
+    {% block data %}
+    {% endblock%}
+{% endblock %}

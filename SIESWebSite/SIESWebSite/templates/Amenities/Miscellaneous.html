@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends "Amenities/Amenities_department.html" %}
+{% load staticfiles %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block content %}
+<h1 align="center">MISCELLANEOUS AMENITIES</h1>
+
+<h3>Canteen</h3>
+
+<img src="{% static "images/Amenities/Canteen.jpg" %}" width="100" height="100">
+
+<p><STRONG>
+               The canteen offers fresh snacks, beverages and lunch at subsidized prices. 
+               Besides, the canteen space is ideal for congregational activities of students.
+</STRONG></p>
+
+<h3>Gymnasium</h3>
+
+<img src="{% static "images/Amenities/Gymnasium.jpg" %}" width="100" height="100">
+
+<p><STRONG>
+             The facility of a well equipped gymnasium with modern fitness equipments 
+             and the services of a professional trainer is available in the campus for students at subsidized charges.
+</STRONG></p>
+
+<h3>Indoor Sports</h3>
+
+<img src="{% static "images/Amenities/Indoor_sports.jpg" %}" width="100" height="100">
+
+<p><STRONG>
+              At SIES GST the rains can't foil our fun. There is plenty of indoor sports like table tennis, 
+              carom chess and many more to choose from. Studeents can access these games after lsctures get over.
+</STRONG></p>
+
+<h3>Common Rooms</h3>
+
+<img src="{% static "images/Amenities/Common_rooms.jpg" %}" width="100" height="100">
+
+{% endblock %}

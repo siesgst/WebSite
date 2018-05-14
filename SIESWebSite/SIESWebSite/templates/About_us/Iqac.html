@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends "About_us/About.html" %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block data %}
+    <h1> Internal Quality Assurance Cell - IQAC </h1>   
+    <h2>About</h2>
+    <p>Quality has been an Integral Part of SIES GST since its inception. Since SIES GST was ISO 9001 Quality Managment System
+    certified between 2005 and 2017, a healthy quality culture is ingrained in the Institute. 
+    This quality culture is now continued through Internal Quality Assurance Cell (IQAC). Since we know that Quality enhancement 
+    is a continuous process, this IQAC will become a part of the SIESGST's system and work towards realising the goals of quality
+    enhancement and sustenance. Formed in April 2017, the prime 
+    task of the IQAC is to develop a system for conscious, consistent and catalytic improvement in the performance of the institute.</p>
+      
+    <h3>Objectives</h3>
+    <ol>
+    <li> Ensuring timely, efficient and progressive performance of academic, administrative and financial tasks. </li>
+    <li> The relevance and quality of academic and research programmes.</li> 
+    <li> Equitable access to and affordability of academic programmes for various sections of society.</li> 
+    <li> Optimization and integration of modern methods of teaching and learning.</li> 
+    <li>The credibility of evaluation procedures.</li> 
+    </li>Ensuring the adequacy, maintenance and functioning of the support structure and services.  </li> 
+    </ol>  
+    
+    <h4>Functions</h4>
+    <ol>
+    <li>Development and application of quality benchmarks/parameters for various academic and administrative activities of the 
+    institution </li>
+    <li>Facilitating the creation of a learner-centric environment conducive to quality education and faculty
+    maturation to adopt the required knowledge and technology for participatory teaching and learning process </li>
+    <li>Arrangement for feedback response from students, parents and other stakeholders on quality-related institutional processes.</li> 
+    <li>Dissemination of information on various quality parameters of higher education</li>
+    <li>Organization of inter and intra institutional workshops, seminars on quality related themes and promotion of quality circles</li> 
+    <li>Documentation of the various programmes/activities leading to quality improvement.</li>
+
+ 
+    </ol>  
+     
+     <h5>Reports</h5>
+     <a href='{% url 'Iqac_formation_report' %}'><h2> <center> IQAC formation report</center></h2></a>
+     <a href='{% url 'Iqac_minutes_of_meetings' %}'><h2> <center>IQAC minutes of meetings</center></h2></a>
+
+    {% endblock %}

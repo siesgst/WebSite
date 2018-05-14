@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% extends "frame.html" %}
+{% load staticfiles %}
+{% block title %}My Hello Page{% endblock %}
+
+{% block content %}
+<strong><i>access_time</i> BUSINESS HOURS</strong>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>Monday - Saturday</td>
+                                    <td>9:00 AM to 5:30 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                                </tbody>
+                            </table><br>
+                            <sup>*</sup> 2<sup>nd</sup> and 4<sup>th</sup> Saturdays are off
+                            <strong><i>place</i><br> ADDRESS</strong><p>
+                                Sri Chandrasekarendra Saraswati Vidyapuram
+                                Sector-V, Nerul
+                                Navi Mumbai - 400706.
+                            </p>
+                        
+                                    <strong><span><i>phone</i> PHONE :</span></strong>
+
+                                    <a href="tel:022-61082400">022-61082400</a><br>
+                                    <a href="tel:022-61082402">022-61082402</a><br>
+                                    <a href="tel:022-61082427">022-61082427</a><br>
+                                    <a href="tel:022-61082417">022-61082417</a><br>
+                                    <a href="tel:022-61082419">022-61082419</a>
+
+                    <h5>
+                        GET IN TOUCH <br>
+                                                                        <p>
+                            All fields are compulsory<br>
+                            *All queries will be answered only during business hours
+                        </p>
+                        <form action="http://www.siesgst.edu.in/contact" method="POST">
+                                       <input id="first_name" name="first_name" type="text">
+                                        <label>First Name</label>
+                                      <input id="last_name" name="last_name" type="text">
+                                        <label>Last Name</label>
+                                      <input id="email" name="email" type="email">
+                                        <label>Email</label>
+                                      <input id="phone" name="phone" type="tel">
+                                        <label >Phone</label>
+                                        <textarea id="query" name="message" ></textarea>
+                                        <label>Write Here...</label>
+                         </form>
+                    </h5>
+                    <div>Date</div>
+                    <div>branch</div>
+               
+                <h4 >News Title</h4>
+                <p>
+                    news Description
+                </p>
+{% endblock %}
